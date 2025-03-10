@@ -1,1 +1,87 @@
+// Ejemplo 1: Herencia Simple
+class Flor {
+    public void Fotosintesis() {
+        Console.WriteLine("La flor realiza fotosíntesis");
+    }
+}
+
+class Tulipan : Flor {
+    public void Aroma() {
+        Console.WriteLine("El tulipán tiene un aroma dulce");
+    }
+}
+
+// Ejemplo 2: Herencia Multinivel
+class Vehiculo {
+    public void Mover() {
+        Console.WriteLine("El vehículo se mueve");
+    }
+}
+
+class Coche : Vehiculo {
+    public void Acelerar() {
+        Console.WriteLine("El coche acelera");
+    }
+}
+
+class Electrico : Coche {
+    public void CargarBateria() {
+        Console.WriteLine("Cargando batería");
+    }
+}
+
+// Ejemplo 3: Herencia Jerárquica
+class Empleado {
+    public void Trabajar() {
+        Console.WriteLine("Trabajando");
+    }
+}
+
+class Gerente : Empleado {
+    public void Administrar() {
+        Console.WriteLine("Administrando el equipo");
+    }
+}
+
+class Desarrollador : Empleado {
+    public void Programar() {
+        Console.WriteLine("Escribiendo código");
+    }
+}
+
+// Ejemplo 4: Herencia con Interfaces (Herencia Múltiple Simulada)
+interface IVolador {
+    void Volar();
+}
+
+class Pajaro : IVolador {
+    public void Volar() {
+        Console.WriteLine("El pájaro está volando");
+    }
+}
+
+class Avion : IVolador {
+    public void Volar() {
+        Console.WriteLine("El avión está volando");
+    }
+}
+
+// Ejemplo 5: Herencia Híbrida
+abstract class Dispositivo {
+    public abstract void Encender();
+}
+
+interface IRecargable {
+    void Recargar();
+}
+
+class Movil : Dispositivo, IRecargable {
+    public override void Encender() {
+        Console.WriteLine("El móvil está encendido");
+    }
+    
+    public void Recargar() {
+        Console.WriteLine("Recargando móvil");
+    }
+}
 
